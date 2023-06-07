@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+.main-detail {
+    height: 911px;
+    padding: 23px;
+    display: flex;
+    align-items: stretch;
+}
+
+#product-container {
+    border-radius: 7px 7px 10px 10px;
+    width: 320px;
+    height: 500px;
+    background-color: limegreen;
+    width: 50%;
+    margin-right: 50px;
+}
+
+
+#product-container img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 176px;
+    width: 306px;
+    padding-top: 15px;
+    margin: auto;
+}
+
+
+#purchase-form {
+    width: 50%;
+    border-radius: 7px 7px 10px 10px;
+    background-color: orange;
+}
+
+
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <span class="initials">LXS</span>
+            <span class="expanded">LuniXstore</span>
+          </div>
+
+        <div class="search">
+            <input type="text" placeholder="Cari nama game....." />
+        </div>
+
+        <div class="nav-content">
+            <a href="index.html">About Us</a>
+            <a href="login.html">Login</a>
+            <a href="home.html">Home</a>
+        </div>
+    </div>
+ 
+  <div class="main-detail">
+
+        <div id="product-container">
+            <script>
+                const urlParams = new URLSearchParams(window.location.search);
+                const productId = urlParams.get("id");
+                fetch("product.json")
+                    .then(response => response.json())
+                    .then(data => {
+                        const product = data.find(item => item.id === parseInt(productId));
+                        const productContainer = document.getElementById("product-container");
+                        productContainer.innerHTML =
+                            `
+                        <img src="${product.image}" alt="${product.name}">
+                        <h2><center>${product.name}</center></h2>
+                        <p>${product.description}</p>
+                        <p>Price: $${product.price}</p>
+              
+            `;
+                    })
+                    .catch(error => console.error(error));
+            </script>
+        </div>
+    
+       
+        
+        <div id="purchase-form">
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

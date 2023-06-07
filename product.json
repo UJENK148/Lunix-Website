@@ -1,0 +1,16 @@
+[
+    {
+      "id": 1,
+      "name": "Valorant",
+      "description": "Valorant is a free-to-play first-person tactical hero shooter developed and published by Riot Games, for Windows. Teased under the codename Project A in October 2019, the game began a closed beta period with limited access on April 7, 2020, followed by a release on June 2, 2020.",
+      "price": 19.99,
+      "image": "img/item/V_Logotype_Red.png"
+    },
+    {
+      "id": 2,
+      "name": "HSR",
+      "description": "Honkai: Star Rail is a role-playing gacha video game developed by miHoYo, published by miHoYo in China and by its subsidiary HoYoverse worldwide. It was released on April 26, 2023, for Windows and mobile devices; ports for PlayStation 4 and 5 are planned.",
+      "price": 29.99,
+      "image": "img/item/hsr.jpg"
+    }
+  ]
