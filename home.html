@@ -59,14 +59,14 @@
             <div class="content-main">
                 
                 <div class="product-tile">
-                    <a href="#" style="text-decoration: none;">
+                    <a href="#" style="text-decoration: none;" onclick="showProductDetail(1)">
                         <img src="img/item/V_Logotype_Red.png" alt="Product Image">
                   <h3>Valorant</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio omnis, numquam voluptate iure, animi, non eos temporibus quisquam veniam eveniet iste dicta? Illum tempore, et eum mollitia aliquid esse earum.</p>
                     </a>
                 </div>
                 <div class="product-tile">
-                    <a href="#" style="text-decoration: none;">
+                    <a href="#" style="text-decoration: none;" onclick="showProductDetail(2)" >
                         <img src="img/item/V_Logotype_Red.png" alt="Product Image">
                   <h3>Valorant</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio omnis, numquam voluptate iure, animi, non eos temporibus quisquam veniam eveniet iste dicta? Illum tempore, et eum mollitia aliquid esse earum.</p>
@@ -116,6 +116,12 @@
                 </div> 
               </div>
         </div>
+        <script>
+            function showProductDetail(productId) {
+      // Redirect to the product detail page with the selected product ID
+      window.location.href = "product.html?id=" + productId;
+    }
+        </script>
         <script src="js/slide.js"></script>
         <script src="js/time.js"></script>
     </body>
