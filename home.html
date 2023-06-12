@@ -1,128 +1,129 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <link rel="stylesheet" href="style.css">
-        <title>LuniXtore - Gaming TopUp</title>
-
-    </head>
-
-    <body>
-        <div class="navbar">
-            <div class="logo">
-                <span class="initials">LXS</span>
-                <span class="expanded">LuniXstore</span>
-              </div>
-
-            <div class="search">
-                <input type="text" placeholder="Cari nama game....." />
-            </div>
-
-            <div class="nav-content">
-                <a href="index.html">About Us</a>
-                <a href="login.html">Login</a>
-                <a class="active">Home</a>
-            </div>
-        </div>
-
-        <div class="main">
-            <div class="Promo">
-                <div class="slideshow-container">
-                    <!-- Full-width images with number and caption text -->
-                    <div class="mySlides fade">
-
-                      <img src="img/promo/1.png" style="width:100%">
-                    </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+          const productId = urlParams.get("id");
+          fetch("product.json")
+              .then((response) => response.json())
+              .then((data) => {
+                  const product = data.find((item) => item.id === parseInt(productId));
+                  const productContainer = document.getElementById("product-container");
+                  const itemvalue = document.getElementById("item");
+                  itemvalue.innerHTML = `
+                  <h3>Select Value</h3>
+                  <input type="radio" id="age1" name="value" value="100">
+                  <label for="age1">${product.value}</label><br>
+                  <input type="radio" id="age2" name="age" value="60">
+                  <label for="age2">${product.value2}</label><br>  
+                  <input type="radio" id="age1" name="age" value="30">
+                  <label for="age1">${product.value3}</label><br>
+                  <input type="radio" id="age2" name="age" value="60">
+                  <label for="age2">${product.value4}</label><br>
+                  <input type="radio" id="age1" name="age" value="30">
+                  <label for="age1">${product.value5}</label><br>
                   
-                    <div class="mySlides fade">
-                      <img src="img/promo/2.png" style="width:100%">
-                    </div>
                   
-                    <div class="mySlides fade">
-                      <img src="img/promo/3.png" style="width:100%">
-                    </div>
-                  </div>
-                  <br>
-                  <div style="text-align:center">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                  </div>
-                </div>
-            </div> <div class="placeholder" style="align-items: center;">
-                <span class="Pilih-product" style="text-align: center;">Our Product</span>
-            </div>
-           
-            <div class="content-main">
-                
-                <div class="product-tile">
-                    <a href="#" style="text-decoration: none;" onclick="showProductDetail(1)">
-                        <img src="img/item/V_Logotype_Red.png" alt="Product Image">
-                  <h3>Valorant</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio omnis, numquam voluptate iure, animi, non eos temporibus quisquam veniam eveniet iste dicta? Illum tempore, et eum mollitia aliquid esse earum.</p>
-                    </a>
-                </div>
-                <div class="product-tile">
-                    <a href="#" style="text-decoration: none;" onclick="showProductDetail(2)" >
-                        <img src="img/item/V_Logotype_Red.png" alt="Product Image">
-                  <h3>Valorant</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio omnis, numquam voluptate iure, animi, non eos temporibus quisquam veniam eveniet iste dicta? Illum tempore, et eum mollitia aliquid esse earum.</p>
-                    </a>
-                </div>
-                <div class="product-tile">
-                    <a href="#" style="text-decoration: none;">
-                        <img src="img/item/V_Logotype_Red.png" alt="Product Image">
-                  <h3>Valorant</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio omnis, numquam voluptate iure, animi, non eos temporibus quisquam veniam eveniet iste dicta? Illum tempore, et eum mollitia aliquid esse earum.</p>
-                    </a>
-                </div>
-                <div class="product-tile">
-                    <a href="#" style="text-decoration: none;">
-                        <img src="img/item/V_Logotype_Red.png" alt="Product Image">
-                  <h3>Valorant</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio omnis, numquam voluptate iure, animi, non eos temporibus quisquam veniam eveniet iste dicta? Illum tempore, et eum mollitia aliquid esse earum.</p>
-                    </a>
-                </div>
-                <div class="product-tile">
-                    <a href="#" style="text-decoration: none;">
-                        <img src="img/item/V_Logotype_Red.png" alt="Product Image">
-                  <h3>Valorant</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio omnis, numquam voluptate iure, animi, non eos temporibus quisquam veniam eveniet iste dicta? Illum tempore, et eum mollitia aliquid esse earum.</p>
-                    </a>
-                </div>
-                <div class="product-tile">
-                    <a href="#" style="text-decoration: none;">
-                        <img src="img/item/V_Logotype_Red.png" alt="Product Image">
-                  <h3>Valorant</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio omnis, numquam voluptate iure, animi, non eos temporibus quisquam veniam eveniet iste dicta? Illum tempore, et eum mollitia aliquid esse earum.</p>
-                    </a>
-                </div>
-                <div class="product-tile">
-                    <a href="#" style="text-decoration: none;">
-                        <img src="img/item/V_Logotype_Red.png" alt="Product Image">
-                  <h3>Valorant</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio omnis, numquam voluptate iure, animi, non eos temporibus quisquam veniam eveniet iste dicta? Illum tempore, et eum mollitia aliquid esse earum.</p>
-                    </a>
-                </div>
-                <div class="product-tile">
-                    <a href="#" style="text-decoration: none;">
-                        <img src="img/item/V_Logotype_Red.png" alt="Product Image">
-                  <h3>Valorant</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio omnis, numquam voluptate iure, animi, non eos temporibus quisquam veniam eveniet iste dicta? Illum tempore, et eum mollitia aliquid esse earum.</p>
-                    </a>
-                </div> 
-              </div>
-        </div>
-        <script>
-            function showProductDetail(productId) {
-      // Redirect to the product detail page with the selected product ID
-      window.location.href = "product.html?id=" + productId;
-    }
-        </script>
-        <script src="js/slide.js"></script>
-        <script src="js/time.js"></script>
-    </body>
+  
+                  `;
+  
+                  productContainer.innerHTML = `
+                  <img src="${product.image}" alt="${product.name}">
+                  <h2><center>${product.name}</center></h2>
+                  <p>${product.description}</p>
+                  
+                  
+        
+      `;
+              })
+              .catch((error) => console.error(error));
+      </script>
+    <style>
+      .main-detail {
+        height: 911px;
+        padding: 23px;
+        display: flex;
+        align-items: stretch;
+      }
+
+      #product-container {
+        border-radius: 7px 7px 10px 10px;
+        width: 320px;
+        height: 500px;
+        background-color: limegreen;
+        width: 50%;
+        margin-right: 50px;
+      }
+
+      #product-container img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 176px;
+        width: 306px;
+        padding-top: 15px;
+        margin: auto;
+      }
+
+      #product-container p {
+        font-size: 12px;
+      }
+
+      #purchase-form {
+        width: 50%;
+        border-radius: 7px 7px 10px 10px;
+        background-color: orange;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <span class="initials">LXS</span>
+        <span class="expanded">LuniXstore</span>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Cari nama game....." />
+      </div>
+
+      <div class="nav-content">
+        <a href="index.html">About Us</a>
+        <a href="login.html">Login</a>
+        <a href="home.html">Home</a>
+      </div>
+    </div>
+
+    <div class="main-detail">
+      <div id="product-container"></div>
+      <div id="purchase-form">
+        <form>
+          <div id="item"></div>
+          <br>
+          <h3>Personal Detail</h3>
+          <label for="nama">Full Name</label><br/>
+          <input type="text" id="nama" name="nama"><br/>
+          <label for="email">Email Address</label><br />
+          <input type="text" id="email" name="email" /><br />
+          <label for="phoneNum">Phone Number (+62)</label><br />
+          <input type="text" id="phoneNum" name="phoneNum" />
+          <div id="payment">
+            <h3>Select Payment Method</h3>
+
+            <a href="">
+                <button>Gopay</button></a>
+            <a href=""><button>Mandiri</button></a>
+            <a href=""><Button>Dana</Button></a>
+          </div>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+    
+  </body>
 </html>

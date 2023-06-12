@@ -1,16 +1,93 @@
 [
-    {
-      "id": 1,
-      "name": "Valorant",
-      "description": "Valorant is a free-to-play first-person tactical hero shooter developed and published by Riot Games, for Windows. Teased under the codename Project A in October 2019, the game began a closed beta period with limited access on April 7, 2020, followed by a release on June 2, 2020.",
-      "price": 19.99,
-      "image": "img/item/V_Logotype_Red.png"
-    },
-    {
-      "id": 2,
-      "name": "HSR",
-      "description": "Honkai: Star Rail is a role-playing gacha video game developed by miHoYo, published by miHoYo in China and by its subsidiary HoYoverse worldwide. It was released on April 26, 2023, for Windows and mobile devices; ports for PlayStation 4 and 5 are planned.",
-      "price": 29.99,
-      "image": "img/item/hsr.jpg"
-    }
-  ]
+  {
+    "id": 1,
+    "name": "Valorant",
+    "description": "Valorant is a free-to-play first-person tactical hero shooter developed and published by Riot Games, for Windows. Teased under the codename Project A in October 2019, the game began a closed beta period with limited access on April 7, 2020, followed by a release on June 2, 2020.",
+    "image": "img/item/valorant.png",
+    "item_img":"",
+    "value": "100 VP",
+    "value2": "200 VP",
+    "value3": "300 VP",
+    "value4": "500 VP",
+    "value5": "1000 VP"
+
+  },
+  {
+    "id": 2,
+    "name": "HSR",
+    "description": "Honkai: Star Rail is a role-playing gacha video game developed by miHoYo, published by miHoYo in China and by its subsidiary HoYoverse worldwide. It was released on April 26, 2023, for Windows and mobile devices; ports for PlayStation 4 and 5 are planned.",
+    "image": "img/item/hsr.jpg",
+    "value": "100 VP",
+    "value2": "200 VP",
+    "value3": "300 VP",
+    "value4": "500 VP",
+    "value5": "1000 VP"
+  },
+  {
+    "id": 3,
+    "name":"Mobile Legends : Bang",
+    "description":"Mobile Legends: Bang Bang is a multiplayer online battle arena (MOBA) game designed for mobile phones. The game is free-to-play and is only monetized through in-game purchases like characters and skins. Each player can control a selectable character, called a Hero, with unique abilities and traits. There are six roles that define the main purpose of heroes: Tank, Marksman, Assassin, Fighter, Mage, and Support. ",
+    "image":"img/item/ml.jpg",
+    "value": "100 VP",
+    "value2": "200 VP",
+    "value3": "300 VP",
+    "value4": "500 VP",
+    "value5": "1000 VP"
+  },
+  {
+    "id": 4,
+    "name":"League Of Legends",
+    "description":"",
+    "image":"img/item/lol.jpg",
+    "value": "100 VP",
+    "value2": "200 VP",
+    "value3": "300 VP",
+    "value4": "500 VP",
+    "value5": "1000 VP"
+  },
+  {
+    "id": 5,
+    "name":"PUBG : Battleground",
+    "description":"",
+    "image":"img/item/pubg.jpg",
+    "value": "100 VP",
+    "value2": "200 VP",
+    "value3": "300 VP",
+    "value4": "500 VP",
+    "value5": "1000 VP"
+  },
+  {
+    "id": 6,
+    "name":"Genshin Impact",
+    "description":"",
+    "image":"img/item/gi.png",
+    "value": "100 VP",
+    "value2": "200 VP",
+    "value3": "300 VP",
+    "value4": "500 VP",
+    "value5": "1000 VP"
+
+  },
+  {
+    "id": 7,
+    "name":"Free Fire",
+    "description":"",
+    "image":"img/item/ff.jpg",
+    "value": "100 VP",
+    "value2": "200 VP",
+    "value3": "300 VP",
+    "value4": "500 VP",
+    "value5": "1000 VP"
+  },
+  {
+    "id": 8,
+    "name":"Fortnite",
+    "description":"",
+    "image":"img/item/fortnite.jpg",
+    "value": "100 VP",
+    "value2": "200 VP",
+    "value3": "300 VP",
+    "value4": "500 VP",
+    "value5": "1000 VP"
+  }
+]
